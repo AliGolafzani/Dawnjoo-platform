@@ -1,15 +1,158 @@
 @import "tailwindcss";
 
+@theme {
+  --color-mint: #6fdcbf;
+  --color-mint-up: #a5d4bb;
+  --color-mint-down: #55af96;
+  --color-mint-noSwop: #6fdcbf;
+
+  --color-lilac: #ae8fdb;
+  --color-lilac-up: #b1b1d8;
+  --color-lilac-noSwop: #ae8fdb;
+
+  --color-sea: #72cada;
+  --color-highlight: #ae8fdb;
+  --color-sherbet: #fef8b4;
+  --color-rose: #dc849b;
+  --color-marshmellow: #d695b6;
+  --color-peach: #f2c3c0;
+  --color-biscuit: #ad998a;
+  --color-oat: #cbc1bd;
+
+  --color-light: #f7f7f7;
+  --color-light-down: #fafafa;
+  --color-light-down2: #f4f5f5;
+  --color-light-down3: #ecedee;
+  --color-light-fade: #eeebef;
+
+  --color-mid: #cccccc;
+
+  --color-dark: #404040;
+  --color-dark-down: #303145;
+  --color-dark-noSwop: #404040;
+
+  --color-custom-gray: #babcbe;
+  --color-custom-lightGrayishOrange: #fff9cc;
+  --color-custom-lightGrayishOrange_2: #fcebb6;
+  --color-custom-lightGrayishCyan: #bdc0f4;
+  --color-custom-lightPurple: #cc7d96;
+  --color-custom-gray_2: #a3aeb2;
+  --color-custom-grayishPurple: #a58492;
+  --color-custom-white: #e2e6e8;
+  --color-custom-lightGrayishCyan_2: #a3d9e8;
+  --color-custom-gray_3: #424243;
+  --color-custom-gray_4: #afafaf;
+  --color-custom-lightGrayishOrange_3: #ede3d1;
+  --color-custom-white_2: #e5e6e7;
+  --color-custom-lightGrayishCyan_3: #b0baea;
+  --color-custom-white_3: #eaeaea;
+  --color-custom-grayishGreen: #84998b;
+  --color-custom-gray_5: #404040;
+  --color-custom-gray_6: #998c8c;
+  --color-custom-gray_7: #c6c6c6;
+  --color-custom-lightGrayishCyan_4: #a3b2e5;
+  --color-custom-grayishBlue: #9084a0;
+  --color-custom-lightGreen: #4eb785;
+  --color-custom-lightGrayishRed: #efceb9;
+  --color-custom-white_4: #f0f0f2;
+  --color-custom-lightRed: #e84d4d;
+  --color-custom-gray_8: #e3d1e5;
+  --color-custom-grayishBlue_2: #a284a3;
+  --color-custom-grayishGreen_2: #829995;
+  --color-custom-grayishYellow: #979987;
+  --color-custom-grayishCyan: #83859e;
+  --color-custom-grayishOrange: #999488;
+  --color-custom-lightGrayishRed_2: #f2c5c2;
+  --color-custom-grayishPurple_2: #a3848d;
+  --color-custom-lightGrayishBlue: #b2b2d8;
+  --color-custom-lightGrayishBlue_2: #a693d1;
+  --color-custom-black: #262528;
+  --color-custom-lightGreen_2: #6fdcbf;
+  --color-custom-lightGrayishOrange_4: #b5aa9a;
+  --color-custom-grayishRed: #ad998a;
+  --color-custom-lightRed_2: #ffaa96;
+  --color-custom-lightOrange: #f2dd77;
+  --color-custom-grayishBlue_3: #706d84;
+  --color-custom-lightGrayishOrange_5: #fef8b4;
+  --color-custom-gray_9: #d1d1d1;
+  --color-custom-gray_10: #d2d8db;
+  --color-custom-lightGrayishRed_3: #c1ab9d;
+  --color-custom-lightGreen_3: #88d3d1;
+  --color-custom-lightGrayishOrange_6: #e0d5c1;
+  --color-custom-grayishRed_2: #77655a;
+  --color-custom-grayishBlue_4: #565266;
+  --color-custom-green: #56af96;
+  --color-custom-lightGrayishBlue_3: #d0b6d1;
+  --color-custom-black_2: #282828;
+  --color-custom-gray_11: #d2cfd6;
+  --color-custom-gray_12: #d3d3d3;
+  --color-custom-lightCyan: #6fb6c6;
+  --color-custom-lightGrayishGreen: #a4d3ba;
+  --color-custom-grayishYellow_2: #899985;
+  --color-custom-lightGreen_4: #83e5ab;
+  --color-custom-lightGrayishCyan_5: #c2e7ef;
+  --color-custom-darkGrayishCyan: #2b343b;
+  --color-custom-lightOrange_2: #f9e4ac;
+  --color-custom-lightPurple_2: #dd859c;
+  --color-custom-grayishCyan_2: #83929b;
+  --color-custom-lightBlue: #ae8fdb;
+  --color-custom-gray_13: #998e8a;
+  --color-custom-lightGrayishOrange_7: #fff4c5;
+  --color-custom-green_2: #52b292;
+  --color-custom-lightBlue_2: #af91db;
+  --color-custom-lightGrayishBlue_4: #d6a0e0;
+
+  /* Font Families */
+  --font-family-sans: var(--font-vazirmatn), system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family-mosk: Mosk, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Spacing */
+  --spacing-300: 0.8rem;
+  --spacing-500: 1.25rem;
+  --spacing-600: 1.56rem;
+  --spacing-700: 1.95rem;
+  --spacing-800: 2.44rem;
+  --spacing-900: 3.05rem;
+  --spacing-base: 1rem;
+  --spacing-max: 4rem;
+  --spacing-x-lg: 6rem;
+
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-mid: 1.5;
+
+  /* Letter Spacing */
+  --letter-spacing-md: 0.05rem;
+
+  /* Max Widths */
+  --max-width-long: 75ch;
+  --max-width-short: 60ch;
+  --max-width-compact: 40ch;
+
+  /* Z-Indexes */
+  --z-index-300: 0;
+  --z-index-400: 10;
+  --z-index-500: 20;
+  --z-index-600: 30;
+  --z-index-700: 40;
+
+  /* Font Sizes */
+  --font-size-300: 0.8rem;
+  --font-size-500: 1.25rem;
+  --font-size-600: 1.56rem;
+  --font-size-700: 1.95rem;
+  --font-size-800: 2.44rem;
+  --font-size-900: 3.05rem;
+  --font-size-base: 1rem;
+  --font-size-max: 4rem;
+  --font-size-x-lg: 6rem;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +165,4 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }

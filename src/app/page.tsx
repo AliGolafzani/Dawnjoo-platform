@@ -1,3 +1,5 @@
+import { futuraCyrillic } from "./ui/fonts/fonts";
+
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen bg-dark-down text-highlight p-6">
@@ -7,6 +9,20 @@ export default function Home() {
       <p className="max-w-short text-4xl font-sans font-medium text-lilac">
         به دنیای یادگیری خوش آمدی! اینجا جاییه که می‌تونی مهارت‌های زبان
         انگلیسی، مهارت‌های نرم و اقتصاد رفتاری رو به صورت تعاملی یاد بگیری
+      </p>
+      <hr />
+      <p
+        className={`${futuraCyrillic.className} max-w-short text-5xl font-extralight text-mint-up`}
+      >
+        Dawnjoo has the best English courses.
+        <br />
+        Dawnjoo has the best Italian courses.
+        <br />
+        Dawnjoo has the best Franch courses.
+        <br />
+        Dawnjoo has the best German courses.
+        <br />
+        Dawnjoo has the best Russian courses.
       </p>
     </main>
   );
